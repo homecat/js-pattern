@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset=utf-8" />
+<link href="style.css" type="text/css" rel="stylesheet" />
+<script src="jquery.js" type="text/javascript"></script>
+<script src="member_check.js" type="text/javascript"></script>
+<title>member_check</title>
+</head>
+<body>
+<form id="add_memner_accounts" >  
+    <input type="text"   name="_name" value="Zhanghuaming"><span class="username"></span>
+    <input type="text"   name="_status" value="40"><span class="_status"></span>
+    <input type="text"   name="_qq" value="61222575"><span class="_qq"></span><br><br>
+    <input type="text"   name="_phone" value="1380138000"><span class="_phone"></span><br><br>
+    <input type="text"   name="_weichat" value="641098831"><span class="_weichat"></span><br><br>
+    <input type="text"   name="_from" value="Beijing" ><span class="_from"></span><br><br>
+    <input type="text"   name="channel"  value="Programmer" ><span class="_from"></span><br><br>
+    <textarea name="_info">Phone:(86)18948197961</textarea><span class="_info"></span><br><br>
+    <input type="submit" onclick="return check()"  value="Send" ><br><br>
+</form>
+<br>
+<div id="msg" class="red"></div>
+</body>
+</html>

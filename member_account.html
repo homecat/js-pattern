@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset=utf-8" />
+<link href="style.css" type="text/css" rel="stylesheet" />
+<script src="jquery.js" type="text/javascript"></script>
+<script src="member_check.js" type="text/javascript"></script>
+<title>member_check</title>
+</head>
+<body>
+<form method="post" name="add_memner_account" id="add_memner_accounts">
+	<!-- http://192.168.0.8/rc_rcm/index.php/manage/member_account/add/1/1 -->
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td>姓名<span class="member_name  red"></span></td>
+            <td>QQ<span class="member_qq red"></span></td>
+            <td>手机号码1<span class="member_phone  red"></span></td>
+            <td>微信<span class="member_weixin  red"></span></td>
+            <td>状态<span class="member_status  red"></span></td>
+			<td>来源<span class="member_from  red"></span></td>
+			<td>渠道<span class="channel  red"></span></td>
+            <td>描述<span class="member_info  red"></span><span class="msg red"></span></td>
+            <td class="mainbbn"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="member_name" value="Jacky" /></td>
+            <td><input type="text" name="member_qq" value="61222575" /></td>
+            <td><input type="text" name="member_phone" value="13800138000" /></td>
+            <td><input type="text" name="member_weixin" value="641098831" /></td>
+            <td><select name="member_status" >
+                    <option value="">请选择</option>
+                    <option value="Stage1" >Stage1</option>
+                    <option value="Stage2" >Stage2</option>
+                    <option value="Stage3" >Stage3</option>
+                    <option value="Stage4" >Stage4</option>
+                    <option value="Stage5" >Stage5</option>
+                    <option value="Dead" >Dead</option>
+                    <option value="Blacklist" >Blacklist</option>
+                    <option value="predead" >predead</option>
+                </select>
+            </td>
+			<td><select name="member_from">
+                    <option value="">请选择</option>
+                    <option value="Coldcall" >Coldcall</option>
+                    <option value="Live800" >Live800</option>
+                    <option value="QQ" >QQ</option>
+                    <option value="MGM" >MGM</option>
+                    <option value="Phone in" >Phone in</option>
+                    <option value="Campaign" >Campaign</option>
+                    <option value="Customer" >Customer</option>
+                    <option value="Other" >Other</option>
+                    <option value="Deadlead-RE" >Deadlead-RE</option>
+                    <option value="文銷轉介" >文銷轉介</option>
+                    <option value="你好" >你好</option>
+                </select>
+            </td>
+            <td><select name="channel" id="add_channel">
+	                <option value="">请选择</option>
+	                <option value="看看" >看看</option>
+                </select>
+            </td>
+            <td><input type="text" name="member_info" style="width:330px;" value="account info" /></td>
+            <td><input type="submit" id="add_member_account_submit" value="新增客户" onclick="return check();" /></td>
+        </tr>
+    </table>
+</form>
+<br><br><br>
+<form name="test_form" method="post" id="test_form">
+<input type="text" name="phone" value="13800138000" id="test_phone"/> <input type="submit" name="bnt" value="Submit" onclick="return test();"/>
+<div class="popup"></div>
+</form>
+</body>
+</html>
